@@ -1,0 +1,36 @@
+aside {
+  position: fixed;
+  width: 400px;
+  height: 100vh;
+  background-color: skyblue;
+
+  transition: 0.4s;
+  transform: translateX(0);
+}
+
+aside.right {
+  right: -400px;
+}
+aside.left {
+  left: -400px;
+}
+
+aside.right.active {
+  transform: translateX(-400px);
+}
+aside.left.active {
+  transform: translateX(400px);
+}
+
+aside button {
+  background-color: rgb(0, 115, 128);
+  color: white;
+  border: none;
+  padding: 10px;
+}
+aside.right button {
+  transform: translateX(-100%);
+}
+aside.left button {
+  transform: translateX(400px);
+}

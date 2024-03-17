@@ -1,0 +1,40 @@
+.popup {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px black;
+
+  position: relative;
+  left: calc(50% - 200px);
+  top: 300px;
+}
+
+/* .popup > div {
+  display: grid;
+  grid-template-rows: 50px 200px 50px;
+} */
+
+.popup_title {
+  line-height: 50px;
+  text-indent: 1rem;
+  font-weight: bold;
+}
+
+.popup_foot {
+  line-height: 50px;
+  text-indent: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.popup_foot input[type="checkbox"] {
+  margin-right: auto;
+}
+.popup_foot input[type="button"] {
+  margin-right: 1rem;
+}
